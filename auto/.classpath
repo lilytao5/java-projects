@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/cssparser-0.9.22.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/guava-21.0.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/htmlunit-2.26.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/htmlunit-core-js-2.26.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/htmlunit-driver-2.26.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/httpmime-4.5.3.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/jetty-io-9.4.1.v20170120.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/jetty-util-9.4.1.v20170120.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/neko-htmlunit-2.25.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/phantomjsdriver-1.4.0.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/websocket-api-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/websocket-client-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/websocket-common-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/selenide-4.5.1.jar"/>
+	<classpathentry kind="lib" path="F:/Workspaces/MyEclipse 10/auto/lib/client-combined-3.4.0-nodeps.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

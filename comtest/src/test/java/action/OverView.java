@@ -15,7 +15,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 public class OverView {
   public static void creatChart() {
-	  open("https://shujuguan.shujuguan.cn/home/feapp#overview/category/default_2_115")
+//	  open("https://shujuguan.shujuguan.cn/home/feapp#overview/category/default_2_115")
 	  SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 //	  $(byText("总览")).click();
 //    $(byXpath("/html/body/header/nav/div[2]/div[1]/div[4]/div[2]/div/div[1]/div[1]/div/div[1]")).click();

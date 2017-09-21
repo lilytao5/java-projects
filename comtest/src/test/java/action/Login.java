@@ -8,29 +8,15 @@ import static com.codeborne.selenide.Selectors.*;
 
 public class Login {
 
-	public static String getUsername() {
-		return username;
-	}
-	public static void setUsername(String username) {
-		Login.username = username;
-	}
-	public static String getPassword() {
-		return password;
-	}
-	public static void setPassword(String password) {
-		Login.password = password;
-	}
-	static String  username="liyan@gbase.cn";
+	static String  username="test_ly3@chacuo.net";
 	static String  password="111111";
+
   public static void loginWithPara(){
-      /*open("https://shujuguan.shujuguan.cn");                         
-      $(By.id("username")).val("liyan@gbase.cn");
-      $(By.id("password")).val("111111");     
-      $(byText("µÇÂ¼")).click();*/
-                             
+
       $(By.id("username")).val(username);
       $(By.id("password")).val(password);
       $(byText("µÇÂ¼")).click();
+      sleep(20000);
   }
 
 }

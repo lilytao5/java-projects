@@ -9,9 +9,9 @@ import com.codeborne.selenide.Configuration;
 
 public class PublicMethod {
 	public  static WebDriver newDriver(){
-		String url="https://shujuguan.shujuguan.cn";
+		String url="https://app.shujuguan.cn";
 
-		String driverPath="F:\\java-projects\\auto\\lib\\chromedriver.exe";
+		String driverPath="F:\\java-projects\\comtest\\.idea\\libraries\\chromedriver.exe";
 		String browser="chrome";
 		String browserPara="--disable-infobars";
 		 //System.setProperty("webdriver.chrome.driver", "F:\\Workspaces\\MyEclipse 10\\auto\\lib\\chromedriver.exe");	

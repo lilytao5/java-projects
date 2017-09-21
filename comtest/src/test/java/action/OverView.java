@@ -1,43 +1,70 @@
 package action;
 
 import com.codeborne.selenide.Selenide;
-
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static com.codeborne.selenide.WebDriverRunner.isOpera;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-
-
 public class OverView {
-  public static void creatChart() {
-//	  open("https://shujuguan.shujuguan.cn/home/feapp#overview/category/default_2_115")
-	  SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-//	  $(byText("总览")).click();
-//    $(byXpath("/html/body/header/nav/div[2]/div[1]/div[4]/div[2]/div/div[1]/div[1]/div/div[1]")).click();
-      $(By.id("mydata")).click();
-      System.out.println("1111");
-      $(".nav-category-item-wrapper:first-child .category-item-name").click();
+
+    static String url = "https://app.shujuguan.cn/home/feapp#overview/category/default_1455_10957";
+
+    public OverView(){
+      getWebDriver().get(url);
+//      $(byText("总览")).click();
+//      $(".nav-category-item-wrapper:first-child .category-item-name").click();
+    }
+
+    public static void newChart() {
+
+      SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 
       //创建图表
-      $(By.id("overviewhomeLayout")).$(By.xpath("//div/div/div/div/div/div[1]/div[2]/div[1]/div[1]/div[2]")).click();
-      $(By.id("modals")).$(byText("学员")).click();  
-      $(By.id("prism-toolbar")).$(By.xpath("//div/div[1]/div[2]/div/div/input")).sendKeys("wwww"+df.format(new Date()));  
-      
+      $$(".cate-add-chart-text").get(0).click();
+      $$(".item-title:first-child").first().click();
+      $$(".dashboard-title").get(0).sendKeys("test"+df.format(new Date()));
+
       //选择添加横轴字段
-      $(By.xpath("//*[@id=\"prism-leftview\"]/div/div/div/div[1]/div[1]/div/div[1]/div[2]/div[2]/div[2]")).click();
-      Selenide.sleep(3000);
-      $(byText("创建人")).click();
+      $$("#prism-leftview .ew-content-host .ew-panel").get(0).$(".ew-pact-thumb").click();
+      Selenide.sleep(1000);
+      $(byText("出勤月份")).click();
+
       //选择添加纵轴字段
-      $(By.xpath("//*[@id=\"prism-leftview\"]/div/div/div/div[1]/div[1]/div/div[2]/div[2]/div[2]/div[2]")).click();
-      $(byText("总资产（亿）")).click();
+      $$("#prism-leftview .ew-content-host .ew-panel").get(1).$(".ew-pact-thumb").click();
+      Selenide.sleep(1000);
+      $(byText("当月天数")).click();
+      Selenide.sleep(1000);
+
+      //点击完成
+      Selenide.sleep(2000);
+      $$(".history-text").get(0).click();
+      Selenide.sleep(2000);
+
 
       
   }
 
+    public static void newDashboard(){
+      SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+
+      //创建图集
+      $(".cate-add-dashboard").click();
+      Selenide.sleep(3000);
+      $$(".dashboard-title").get(1).sendKeys("test"+df.format(new Date()));
+
+      //点击添加图表
+      $("#add_workcell .btn-text").click();
+      $$(".item-title:first-child").first().click();
+      $$(".btn-add-chart").first().click();
+      $(".close").click();
+
+      //点击完成
+      $$(".history-text").get(1).click();
+      Selenide.sleep(1000);
+    }
 
 }
